@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapfood : Solusi Atasi Laparmu</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <img src="asset/dapfood.png" alt="Logo Dapfood" width="60">
+                <h1>dapfood</h1>
+            </div>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#menu">Menu Dapfood</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="beranda">
+            <div class="thumbnail">
+                <img src="asset/dapfood.png" alt="Logo Dapfood">
+                <h1>"Solusi Atasi Laparmu"</h1>
+                <p>Mau makan enak tapi gak nguras dompet? Kuy langsung merapat menuju dapfood! banyak promo menanti kalian!</p>
+                <button class="thumbnail-button">Lihat Menu</button>
+            </div>
+        </div>
+        <article id="menu">
+            <header>
+                <h1>Dapfood Menu</h1>
+                <p>Silahkan pesan sesuai selera anda!</p>
+            </header>
+
+            <section class="list-menu">
+                <figure class="card">
+                    <img src="asset/baso.jpeg" alt="Bakso" class="bakso">
+                    <figcaption class="detail">
+                        <p class="price">RP25000</p>
+                        <p class="food-name">Bakso</p>
+                        <button value="25000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/mie.jpeg" alt="Bakso" class="mie">
+                    <figcaption class="detail">
+                        <p class="price">RP22000</p>
+                        <p class="food-name">Mie Goreng</p>
+                        <button value="22000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/bakmi.jpeg" alt="Bakso" class="bakmi">
+                    <figcaption class="detail">
+                        <p class="price">RP30000</p>
+                        <p class="food-name">Bakmi</p>
+                        <button value="30000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/nasigoreng.jpeg" alt="Nasi Goreng" class="nasigoreng">
+                    <figcaption class="detail">
+                        <p class="price">RP25000</p>
+                        <p class="food-name">Nasi Goreng</p>
+                        <button value="25000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/ayambakar.jpeg" alt="Ayam Bakar" class="ayambakar">
+                    <figcaption class="detail">
+                        <p class="price">RP32000</p>
+                        <p class="food-name">Ayam Bakar</p>
+                        <button value="32000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/soto.jpeg" alt="Soto" class="soto">
+                    <figcaption class="detail">
+                        <p class="price">RP24000</p>
+                        <p class="food-name">Soto</p>
+                        <button value="24000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/esteh.jpeg" alt="Bakso" class="esteh">
+                    <figcaption class="detail">
+                        <p class="price">RP5000</p>
+                        <p class="food-name">Es Teh</p>
+                        <button value="5000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/airputih.jpeg" alt="Air Putih" class="airputih">
+                    <figcaption class="detail">
+                        <p class="price">RP5000</p>
+                        <p class="food-name">Air Putih</p>
+                        <button value="5000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="asset/kopi.jpeg" alt="Kopi" class="kopi">
+                    <figcaption class="detail">
+                        <p class="price">RP15000</p>
+                        <p class="food-name">Kopi</p>
+                        <button value="15000" class="order">Pesan</button>
+                    </figcaption>
+                </figure>
+            </section>
+        </article>
+
+        <article id="pesan">
+            <header class="tittle-pesan">
+                <h1>Pesan Dan Bayar Pesananmu</h1>
+                <p>Gunakan Kode Voucher DAPFOODGOKIL buat dapetin potongan harga sebesar 10%!</p>
+            </header>
+            <section class="pembayaran">
+                    <h1>Pesananmu</h1>
+                    <input type="text" class="foodnameInfo" readonly>
+                    <h1>Harga</h1>
+                    <input type="text" class="priceInfo" readonly>
+                    <h1>Alamatmu</h1>
+                    <input type="text-area" class="addressInfo">
+                    <section class="payment">
+                        <h1>Metode Pembayaran</h1>
+                        <button class="btnPayment" value="dana">DANA</button>
+                        <button class="btnPayment" value="ovo">OVO</button>
+                        <br>
+                        <input type="text" class="choice-payment" readonly>
+                        <br>
+                        <label for="tel" class="labelNoHp">Nomor Handphone</label>
+                        <br>
+                        <input type="tel" class="nohp" id="tel">
+                    </section>
+                    <section class="voucher-container">
+                        <label for="voucher" class="labelVoucher">Kode Voucher</label>
+                        <br>
+                        <p class="result-voucher"></p>
+                        <input type="text" id="voucher" class="voucher">
+                        <br>
+                        <button class="claim-voucher">Klaim Voucher</button>
+                        <br>
+                        <h1>Total Harga</h1>
+                        <input type="text" class="price-total" readonly>
+                    </section>
+                    <button class="buy">Bayar</button>
+            </section>
+
+            <section class="result">
+                <h1>Terimakasih</h1>
+                <img src="asset/dapfood.png" alt="Logo Dapfood">
+                <h1>Pesanan Anda Akan Tiba 10 Menit Lagi!</h1>
+                <p>Mau makan enak tapi gak nguras dompet? Kuy langsung merapat menuju dapfood! banyak promo menanti kalian!</p>
+                <button class="back-button">Back</button>
+            </section>
+        </article>
+
+        <article id="tentang">
+            <section>
+                <h1>Tentang Kami</h1>
+                <img src="asset/dapfood.png" alt="Logo Dapfood">
+                <p>
+                    Dapfood adalah destinasi kuliner online yang menyajikan beragam makanan lezat dan berkualitas untuk memenuhi selera Anda. Dengan koleksi menu yang kaya, dari makanan ringan hingga hidangan utama yang lezat, dapfood siap memanjakan lidah Anda. Nikmati kemudahan berbelanja makanan favorit Anda tanpa harus meninggalkan rumah. Dengan pengiriman cepat dan pelayanan yang ramah, Dapfood siap memberikan pengalaman kuliner yang tak terlupakan. Temukan cita rasa yang beragam dan nikmati sensasi kuliner di Dapfood!</p> 
+            </section>
+            <aside class="promote">
+                <article>
+                    <h1>DISKON 10% DAPFOOD</h1>
+                    <img src="asset/logo10%.png" alt="Logo 10%">
+                    <p>Pesan makanan dan minuman di dapfood dan gunakan kode voucher DAPFOODGOKIL untuk dapatkan diskon sebesar 10%!</p>
+                </article>
+            </aside>
+        </article>
+    </main>
+    <footer>
+        <h3>"Solusi Atasi Laparmu"</h3>
+        <div class="social-media">
+            <p>Support us on : <a href="https://www.instagram.com/mdmp.gg/">Instagram</a></p>
+            <p>&#169 Copyright, 2023 Dapfood</p>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
